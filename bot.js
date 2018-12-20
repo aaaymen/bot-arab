@@ -44,7 +44,6 @@ client.on('guildMemberAdd', Sal => { //By aymen
 });
     });
 
-client.login('NTA0Mzk5NjU1MjU4NDIzMzE1.Driw4w.FF_I5QYZt_mb2pIVlETPrdoXA_o');
 
 function clean(text) {
     if (typeof(text) === "string")
