@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
+  if (msg.content === 'سلام') {
+    msg.reply('وعليكم السلام');
   }
 });
 
@@ -52,7 +52,7 @@ const prefix = "++";
 
 client.on("ready", () => {
   console.log("Vulnix | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`bot arab dz |${prefix}help |→ ${prefix}inv`);
+  client.user.setGame(`pax |${prefix}help |`);
 });
 
 
@@ -83,7 +83,7 @@ client.on("ready", () => {
     .setColor("#707070")
     .addField(': دخولك لديسكورد قبل', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true)
     .addField(': انضمامك لسيرفر قبل', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)
-    .setFooter(`🏁것FRS3A것🏁`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')
+    .setFooter(`pax`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')
     .setThumbnail(heg.avatarURL);
     message.channel.send(id)
 }       });
@@ -623,18 +623,7 @@ client.on('message', message=> {
     }
 });
 
-  
-  client.on('message', message => {
-        if (message.content === "++inv") {
-            if(!message.channel.guild) return;
-        let embed = new Discord.RichEmbed()
-        .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
-        .setTitle(`:small_orange_diamond:    ةوعدلل انه طغضا `)
-        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=504399655258423315&permissions=8&scope=bot`)
-        .setThumbnail(" https://cdn.discordapp.com/avatars/377904849783750667/6c76e412f18c142dfd711d05fb363869.png?size=2048")        
-     message.channel.sendEmbed(embed);
-       }
-   });
+ 
    
    client.on("guildMemberAdd", member => {
     member.createDM().then(function (channel) {
@@ -688,13 +677,13 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', message => { // حقوق اوميجا كودز
+client.on('message', message => { // حقوق aymen
     let args = message.content.split(' ').slice(1).join(' ');
     if (message.content.startsWith('++bc-bot')){ // البريفكس والامر
     if(!message.author.id === '') return;
-    message.channel.sendMessage('جار ارسال الرسالة :white_check_mark:')// حقوق اوميجا كودز
-    client.users.forEach(m =>{// حقوق اوميجا كودز
-    m.sendMessage(args)// حقوق اوميجا كودز
+    message.channel.sendMessage('جار ارسال الرسالة :white_check_mark:')// حقوق aymen
+    client.users.forEach(m =>{// حقوق aymen
+    m.sendMessage(args)// حقوق aymen
     })
     }
     });
